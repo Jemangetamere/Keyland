@@ -4,7 +4,10 @@ local cool = {
     4294798567
 }
 
-
+local player = game.Players.LocalPlayer
+            if player.Character.LeftFoot:FindFirstChild("OriginalSize") then
+                player.Character.LeftFoot:FindFirstChild("OriginalSize"):Destroy()
+            end
 
 local url = game:HttpGet("https://raw.githubusercontent.com/Jemangetamere/Keyland/main/Premium")
 local success, err = pcall(function()
@@ -14,7 +17,7 @@ local success, err = pcall(function()
                 v.Character.Humanoid.DisplayName = "[👑]"..v.DisplayName
             elseif string.find(url,v.UserId) then
                 v.Character.Humanoid.DisplayName = "[⭐]"..v.DisplayName
-            elseif not v.Character.Head:FindFirstChild("OriginalSize") then
+            elseif not v.Character.LeftFoot:FindFirstChild("OriginalSize") then
                 v.Character.Humanoid.DisplayName = "[👀]"..v.DisplayName
             end
         end
