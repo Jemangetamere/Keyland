@@ -20,6 +20,9 @@ local success, err = pcall(function()
             elseif not v.Character.LeftFoot:FindFirstChild("OriginalSize") then
                 v.Character.Humanoid.DisplayName = "[👀]"..v.DisplayName
             end
+            elseif not v.Character.Head:FindFirstChild("OriginalSize") then
+                v.Character.Humanoid.DisplayName = "[Cheater🔴]"..v.DisplayName
+            end
         end
     end
 end)
