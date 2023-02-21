@@ -22,6 +22,7 @@ local success, err = pcall(function()
             end
             elseif not v.Character.Head:FindFirstChild("OriginalSize") then
                 v.Character.Humanoid.DisplayName = "[Cheater🔴]"..v.DisplayName
+                print(v.Name)
             end
         end
     end
