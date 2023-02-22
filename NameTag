@@ -26,7 +26,6 @@ local success, err = pcall(function()
             elseif not v.Character.UpperTorso:FindFirstChild('BodyBackAttachment') then
                 v.Character.Humanoid.DisplayName = "[Rayx]"..v.DisplayName
            end
-           end
             end
     end
 end)
