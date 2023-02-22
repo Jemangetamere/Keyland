@@ -19,10 +19,14 @@ local success, err = pcall(function()
                 v.Character.Humanoid.DisplayName = "[⭐]"..v.DisplayName
             elseif not v.Character.LeftFoot:FindFirstChild("OriginalSize") then
                 v.Character.Humanoid.DisplayName = "[👀]"..v.DisplayName
-            end
-            elseif not v.Character.Head:FindFirstChild("OriginalSize") then
+           elseif not v.Character.Head:FindFirstChild("OriginalSize") then
                 v.Character.Humanoid.DisplayName = "[Cheater🔴]"..v.DisplayName
+                 elseif not v.Character.LowerTorso:FindFirstChild("OriginalSize") then
+                v.Character.Humanoid.DisplayName = "[Swagmode]"..v.DisplayName
+            elseif not v.Character.UpperTorso:FindFirstChild('BodyBackAttachment') then
+                v.Character.Humanoid.DisplayName = "[Rayx]"..v.DisplayName
+           end
+           end
             end
-        end
     end
 end)
