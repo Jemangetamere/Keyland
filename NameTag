@@ -86,7 +86,7 @@ Grandmaster.Active = true
 Grandmaster.LightInfluence = 1.000
 Grandmaster.MaxDistance = 200.000
 Grandmaster.Size = UDim2.new(4, 0, 1, 0)
-Grandmaster.StudsOffsetWorldSpace = Vector3.new(0, 3, 0)
+Grandmaster.StudsOffsetWorldSpace = Vector3.new(-0.7, 3, 0)
 
 Text.Name = "Text"
 Text.Parent = Grandmaster
