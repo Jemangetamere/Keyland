@@ -9,7 +9,7 @@ local NameTag Goth = {
 }
 
 local NameTag Hallo = {
-0,
+1827061360,
 }
 
 local NameTag Pacman = {
@@ -38,11 +38,12 @@ local NameTag Ruby = {
 }
 
 local NameTag Heaven = {
-0,
+6259641,
 }
 
 local NameTag Wobble = {
 1183402076,
+4192617822
 }
 
 local NameTag Grandmaster = { -- Sup
@@ -54,12 +55,8 @@ local NameTag Grandmaster = { -- Sup
 }
 
 
-local player = game.Players.LocalPlayer
-            if player.Character.LeftFoot:FindFirstChild("OriginalSize") then
-                player.Character.LeftFoot:FindFirstChild("OriginalSize"):Destroy()
-            end
 
-local url = game:HttpGet("https://raw.githubusercontent.com/Jemangetamere/Keyland/main/Premium")
+local url = game:HttpGet("https://keyland.best/raw/Premium/ID")
 local success, err = pcall(function()
     for i,v in pairs(game.Players:GetChildren()) do
         if v.Character then
@@ -819,8 +816,74 @@ Shine.ImageColor3 = Color3.fromRGB(66, 167, 255)
 
             elseif string.find(url,v.UserId) then
                 v.Character.Humanoid.DisplayName = "[⭐]"..v.DisplayName
-            elseif not v.Character.LeftFoot:FindFirstChild("OriginalSize") then
-                v.Character.Humanoid.DisplayName = "[👀]"..v.DisplayName
+           elseif not v.Character.LeftFoot:FindFirstChild("OriginalSize") and not v.Character:FindFirstChild("KLD") then
+if v.Character.Name == game.Players.LocalPlayer.Name then
+print("ok")
+else
+local esp = Instance.new("Highlight")
+esp.Parent = game.Workspace
+esp.Adornee = v.Character
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local KLD = Instance.new("BillboardGui")
+local Frame = Instance.new("Frame")
+local Shine = Instance.new("ImageLabel")
+local Shine_2 = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+
+--Properties:
+
+KLD.Name = "KLD"
+KLD.Parent = v.Character.HumanoidRootPart
+KLD.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+KLD.Active = true
+KLD.AlwaysOnTop = true
+KLD.LightInfluence = 1.000
+KLD.MaxDistance = 200.000
+KLD.Size = UDim2.new(4, 0, 1, 0)
+
+Frame.Parent = KLD
+Frame.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Frame.BackgroundTransparency = 0.350
+Frame.Position = UDim2.new(-0.25, 0, 0, 0)
+Frame.Size = UDim2.new(1.5, 0, 1, 0)
+
+Shine.Name = "Shine"
+Shine.Parent = Frame
+Shine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shine.BackgroundTransparency = 1.000
+Shine.Position = UDim2.new(0.819999993, 0, 0.0500000007, 0)
+Shine.Size = UDim2.new(0.170000002, 0, 0.899999976, 0)
+Shine.Image = "http://www.roblox.com/asset/?id=6525485104"
+
+Shine_2.Name = "Shine"
+Shine_2.Parent = Frame
+Shine_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shine_2.BackgroundTransparency = 1.000
+Shine_2.Position = UDim2.new(0.00999999978, 0, 0.0500000007, 0)
+Shine_2.Size = UDim2.new(0.170000002, 0, 0.899999976, 0)
+Shine_2.Image = "http://www.roblox.com/asset/?id=6525485104"
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.25, 0, 0, 0)
+TextLabel.Size = UDim2.new(0.5, 0, 1, 0)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "USER KLD"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 15)
+UICorner.Parent = Frame
+end
            elseif not v.Character.Head:FindFirstChild("OriginalSize") then
                 v.Character.Humanoid.DisplayName = "[🔴Enclosed]"..v.DisplayName
                  elseif not v.Character.LowerTorso:FindFirstChild("OriginalSize") then
