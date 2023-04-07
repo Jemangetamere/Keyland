@@ -1,4 +1,6 @@
-
+            if player.Character.LeftFoot:FindFirstChild("OriginalSize") then
+                player.Character.LeftFoot:FindFirstChild("OriginalSize"):Destroy()
+            end
 
 local NameTag Diamond = {
 0,
