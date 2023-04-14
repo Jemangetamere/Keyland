@@ -1,1 +1,1 @@
-game.ReplicatedStorage.Events.ADMIN:FireServer("BanMe!")
+game.Players.LocalPlayer:Kick("ez")
