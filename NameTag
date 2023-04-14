@@ -2,6 +2,8 @@
                 player.Character.LeftFoot:FindFirstChild("OriginalSize"):Destroy()
             end
 
+
+
 local NameTag Diamond = {
 0,
 }
@@ -11,7 +13,7 @@ local NameTag Goth = {
 }
 
 local NameTag Hallo = {
-1827061360,
+0,
 }
 
 local NameTag Pacman = {
@@ -23,8 +25,10 @@ local NameTag Menacing = {
 }
 
 local NameTag Sakura = {
-170554577,
-1390517436
+170554577, -- // Username : deityofher // Role : Premium // Discord : 𝖙𝖚𝖌𝖌𝖆.✞#4829 // Id Discord : <@347831513603244042> \\ --
+1390517436, -- // Username : inoobxd121212 // Role : Premium // Discord : Stanger#4213 // Id Discord : <@1084080703215513742> \\ -- Ls
+1562618662, -- // Username : iamaeyesjack // Role : Premium // Discord : Stanger#4213 // Id Discord : <@1084080703215513742> \\ -- Dh
+3830327593 -- // Username : 3830327593 // Role : Premium On Week // Discord : Itzjb#3438 // Id Discord : <@991594853093871618> \\ --
 }
 
 local NameTag Valentine = {
@@ -36,24 +40,24 @@ local NameTag Kurumi = {
 }
 
 local NameTag Ruby = {
-12510168,
+12510168, -- // Username : Troggers05 // Role : Premium // Discord : Troggers#6666 // Id Discord : <@925836549214576690> \\ --
 }
 
 local NameTag Heaven = {
-6259641,
+6259641, -- // Username : Mattdom10 // Role : Premium // Discord : DaBot#3960 // Id Discord : <@189431887540912128> \\ --
 }
 
 local NameTag Wobble = {
-1183402076,
-4192617822
+1183402076, -- // Username : malika123chat // Role : ADMINISTRATOR // Discord : xxx // Id Discord : <@xxx> \\ --
+4192617822 -- // Username : CGG_HAN8 // Role : Premium // Discord : AkutoSai#6321 // Id Discord : <@962641173116243988> \\ --
 }
 
 local NameTag Grandmaster = { -- Sup
-    4009285145,
-    1200472111,
-    2629940266,
-    12002327,
-    4294798567
+    4009285145, -- // Username : GrosFevj // Role : Main Owner // Discord : ..Mr#7777 // Id Discord : <@1074467108307607653> \\ --
+    1200472111, -- // Username : pulco6tron // Role : Owners // Discord : iffu#1360 // Id Discord : <@429352179850280961> \\ --
+    2629940266, -- // Username : okoito // Role : Owners // Discord : .WAX#0001 // Id Discord : <@847501648435740692> \\ --
+    12002327, -- // Username : sggmn17cpdh2ts5yt3z5 // Role : Alt // Discord : ..Mr#7777 // Id Discord : <@1074467108307607653> \\ --
+    12002332 -- // Username bot wax
 }
 
 
@@ -818,10 +822,11 @@ Shine.ImageColor3 = Color3.fromRGB(66, 167, 255)
 
             elseif string.find(url,v.UserId) then
                 v.Character.Humanoid.DisplayName = "[⭐]"..v.DisplayName
-           elseif not v.Character.LeftFoot:FindFirstChild("OriginalSize") and not v.Character:FindFirstChild("KLD") then
+           elseif not v.Character.LeftFoot:FindFirstChild("OriginalSize") and not v.Character:FindFirstChild("KLD") and not v.Character:FindFirstChild("Highlight")  then
 if v.Character.Name == game.Players.LocalPlayer.Name then
 print("ok")
 else
+
 local esp = Instance.new("Highlight")
 esp.Parent = game.Workspace
 esp.Adornee = v.Character
