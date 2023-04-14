@@ -4,6 +4,8 @@
 
 
 
+
+
 local NameTag Diamond = {
 0,
 }
@@ -822,11 +824,10 @@ Shine.ImageColor3 = Color3.fromRGB(66, 167, 255)
 
             elseif string.find(url,v.UserId) then
                 v.Character.Humanoid.DisplayName = "[⭐]"..v.DisplayName
-           elseif not v.Character.LeftFoot:FindFirstChild("OriginalSize") and not v.Character:FindFirstChild("KLD") and not v.Character:FindFirstChild("Highlight")  then
+           elseif not v.Character.LeftFoot:FindFirstChild("OriginalSize") and not v.Character.HumanoidRootPart:FindFirstChild("KLD")  then
 if v.Character.Name == game.Players.LocalPlayer.Name then
 print("ok")
 else
-
 local esp = Instance.new("Highlight")
 esp.Parent = game.Workspace
 esp.Adornee = v.Character
