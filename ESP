@@ -149,7 +149,6 @@ end
 
 function boxBase:Update()
     if not self.PrimaryPart then
-        --warn("not supposed to print", self.Object)
         return self:Remove()
     end
 
